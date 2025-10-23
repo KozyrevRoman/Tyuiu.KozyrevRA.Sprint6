@@ -33,7 +33,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task0.V2
             DataService ds = new DataService();
             try
             {
-                textBoxAnswer_KRA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(groupBox_InputX_KRA.Text)));
+                textBoxAnswer_KRA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(groupBox_InputX_KRA.Text))); 
             }
             catch
             {

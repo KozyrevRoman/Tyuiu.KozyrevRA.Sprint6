@@ -8,7 +8,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task0.V2.Test
         [TestMethod]
         public void ValidCalculate()
         {
-            DataService ds = new DataService();
+            DataService ds = new DataService(); 
             int x = 3;
             double res = ds.Calculate(x);
             double wait = 6.425;
