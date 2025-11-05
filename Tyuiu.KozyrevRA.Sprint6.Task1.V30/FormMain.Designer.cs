@@ -116,6 +116,7 @@
             groupBoxInput.TabIndex = 6;
             groupBoxInput.TabStop = false;
             groupBoxInput.Text = "Ввод данных";
+            groupBoxInput.Enter += groupBoxInput_Enter;
             // 
             // groupBoxStartStop
             // 

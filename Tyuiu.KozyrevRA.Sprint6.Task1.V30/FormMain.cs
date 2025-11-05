@@ -62,5 +62,10 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task1.V30
         {
 
         }
+
+        private void groupBoxInput_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
