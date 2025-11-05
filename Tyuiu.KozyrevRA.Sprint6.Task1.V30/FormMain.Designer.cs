@@ -97,9 +97,9 @@
             // 
             textBoxStopStep.Location = new Point(144, 401);
             textBoxStopStep.Name = "textBoxStopStep";
-            textBoxStopStep.Size = new Size(109, 27);
+            textBoxStopStep.Size = new Size(109, 27); 
             textBoxStopStep.TabIndex = 4;
-            // 
+            //  
             // textBoxStartStep
             // 
             textBoxStartStep.Location = new Point(12, 401);
