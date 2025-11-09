@@ -140,6 +140,8 @@
             Controls.Add(groupBoxText_KRA);
             Controls.Add(groupBoxTask_KRA);
             Controls.Add(groupBoxInput_KRA);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormMain_KRA";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 1 | Вариант 30 | Козырев Р.А";
