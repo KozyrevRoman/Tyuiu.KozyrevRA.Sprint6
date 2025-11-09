@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             textBoxStartStep_KRA = new TextBox();
             textBoxStopStep_KRA = new TextBox();
             buttonHelp_KRA = new Button();
@@ -154,18 +154,18 @@
             // 
             // chartFunction_KRA
             // 
-            chartArea2.Name = "ChartArea1";
-            chartFunction_KRA.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            chartFunction_KRA.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            chartFunction_KRA.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            chartFunction_KRA.Legends.Add(legend1);
             chartFunction_KRA.Location = new Point(726, 43);
             chartFunction_KRA.Name = "chartFunction_KRA";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            chartFunction_KRA.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            chartFunction_KRA.Series.Add(series1);
             chartFunction_KRA.Size = new Size(573, 375);
             chartFunction_KRA.TabIndex = 15;
             chartFunction_KRA.Text = "chart1";
@@ -184,6 +184,8 @@
             Controls.Add(groupBoxText_KRA);
             Controls.Add(groupBoxTask_KRA);
             Controls.Add(groupBoxInput_KRA);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormMain_KRA";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 2 | Вариант 17 | Козырев Р.А";
