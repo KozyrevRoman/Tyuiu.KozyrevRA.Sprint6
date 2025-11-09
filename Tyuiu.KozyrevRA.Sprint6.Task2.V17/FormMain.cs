@@ -1,9 +1,9 @@
 using Tyuiu.KozyrevRA.Sprint6.Task2.V17.Lib;
 namespace Tyuiu.KozyrevRA.Sprint6.Task2.V17
 {
-    public partial class FormMain : Form
+    public partial class FormMain_KRA : Form
     {
-        public FormMain()
+        public FormMain_KRA()
         {
             InitializeComponent();
         }
@@ -12,20 +12,20 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task2.V17
         {
             try
             {
-                int startStep = Convert.ToInt32(textBoxStartStep.Text);
-                int stopStep = Convert.ToInt32(textBoxStopStep.Text);
+                int startStep = Convert.ToInt32(textBoxStartStep_KRA.Text);
+                int stopStep = Convert.ToInt32(textBoxStopStep_KRA.Text);
                 int len = ds.GetMassFunction(startStep, stopStep).Length;
                 double[] valueArray;
                 valueArray = new double[len];
                 valueArray = ds.GetMassFunction(startStep, stopStep);
-                this.chartFunction.Titles.Add("График функции ");
-                this.chartFunction.ChartAreas[0].AxisX.Title = "Ось X";
-                this.chartFunction.ChartAreas[0].AxisY.Title = "Ось Y";
+                this.chartFunction_KRA.Titles.Add("График функции ");
+                this.chartFunction_KRA.ChartAreas[0].AxisX.Title = "Ось X";
+                this.chartFunction_KRA.ChartAreas[0].AxisY.Title = "Ось Y";
 
                 for (int i = 0; i <= len - 1; i++)
                 {
-                    this.dataGridViewAnswer.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
-                    this.chartFunction.Series[0].Points.AddXY(startStep, valueArray[i]);
+                    this.dataGridViewAnswer_KRA.Rows.Add(Convert.ToString(startStep), Convert.ToString(valueArray[i]));
+                    this.chartFunction_KRA.Series[0].Points.AddXY(startStep, valueArray[i]);
 
                     startStep++;
                 }
@@ -53,17 +53,17 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task2.V17
 
         private void buttonDone_MouseDown(object sender, MouseEventArgs e)
         {
-            buttonDone.BackColor = Color.Blue;
+            buttonDone_KRA.BackColor = Color.Blue;
         }
 
         private void buttonDone_MouseEnter(object sender, EventArgs e)
         {
-            buttonDone.BackColor = Color.Red;
+            buttonDone_KRA.BackColor = Color.Red;
         }
 
         private void buttonDone_MouseLeave(object sender, EventArgs e)
         {
-            buttonDone.BackColor = Color.Green;
+            buttonDone_KRA.BackColor = Color.Green;
         }
     }
 }
