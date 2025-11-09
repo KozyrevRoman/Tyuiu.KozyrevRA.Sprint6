@@ -1,6 +1,6 @@
 ﻿namespace Tyuiu.KozyrevRA.Sprint6.Task0.V2
 {
-    partial class FormMain
+    partial class FormMain_KRA
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_KRA));
             groupBoxCondition_KRA = new GroupBox();
             groupBoxOutput_KRA = new GroupBox();
             groupBoxResult_KRA = new GroupBox();
@@ -155,7 +155,7 @@
             groupBoxText_KRA.Text = "Вычислить выражение по формуле";
             groupBoxText_KRA.Enter += groupBox2_Enter;
             // 
-            // FormMain
+            // FormMain_KRA
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -169,7 +169,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FormMain";
+            Name = "FormMain_KRA";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 0 | Вариант 2 | Козырев Р.А ";
             Load += FormMain_Load;

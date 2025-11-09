@@ -1,9 +1,9 @@
 using Tyuiu.KozyrevRA.Sprint6.Task0.V2.Lib;
 namespace Tyuiu.KozyrevRA.Sprint6.Task0.V2
 {
-    public partial class FormMain : Form
+    public partial class FormMain_KRA : Form
     {
-        public FormMain()
+        public FormMain_KRA()
         {
             InitializeComponent();
         }

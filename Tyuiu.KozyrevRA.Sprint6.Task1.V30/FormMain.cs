@@ -1,9 +1,9 @@
 using Tyuiu.KozyrevRA.Sprint6.Task1.V30.Lib;
 namespace Tyuiu.KozyrevRA.Sprint6.Task1.V30
 {
-    public partial class FormMain : Form
+    public partial class FormMain_KRA : Form
     {
-        public FormMain()
+        public FormMain_KRA()
         {
             InitializeComponent();
         }
@@ -28,24 +28,24 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task1.V30
         {
             try
             {
-                int startStep = Convert.ToInt32(textBoxStartStep.Text);
-                int stopStep = Convert.ToInt32(textBoxStopStep.Text);
+                int startStep = Convert.ToInt32(textBoxStartStep_KRA.Text);
+                int stopStep = Convert.ToInt32(textBoxStopStep_KRA.Text);
                 string strLine;
                 double[] valueArray;
                 valueArray = new double[stopStep - startStep + 1];
                 valueArray = ds.GetMassFunction(startStep, stopStep);
                 int len = valueArray.Length;
-                textBoxResult.Text = "";
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
-                textBoxResult.AppendText("|    X     |  f(X)    |" + Environment.NewLine);
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_KRA.Text = "";
+                textBoxResult_KRA.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_KRA.AppendText("|    X     |  f(X)    |" + Environment.NewLine);
+                textBoxResult_KRA.AppendText("+----------+----------+" + Environment.NewLine);
                 for (int i = 0; i <= len - 1; i++)
                 {
                     strLine = String.Format("|{0,5:d}     |  {1,5:f2}  |", startStep, valueArray[i]);
-                    textBoxResult.AppendText(strLine + Environment.NewLine);
+                    textBoxResult_KRA.AppendText(strLine + Environment.NewLine);
                     startStep++;
                 }
-                textBoxResult.AppendText("+----------+----------+" + Environment.NewLine);
+                textBoxResult_KRA.AppendText("+----------+----------+" + Environment.NewLine);
             }
             catch
             {
