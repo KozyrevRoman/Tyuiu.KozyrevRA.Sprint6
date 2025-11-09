@@ -34,7 +34,7 @@
             groupBoxResult_KRA = new GroupBox();
             textBoxAnswer_KRA = new TextBox();
             buttonComplete_KRA = new Button();
-            buttonName_KRA = new Button();
+            buttonHelp_KRA = new Button();
             groupBox_X_KRA = new GroupBox();
             groupBox_InputX_KRA = new TextBox();
             groupBoxInput_KRA = new GroupBox();
@@ -96,15 +96,15 @@
             buttonComplete_KRA.UseVisualStyleBackColor = true;
             buttonComplete_KRA.Click += buttonCompleteDONE_KRA;
             // 
-            // buttonName_KRA
+            // buttonHelp_KRA
             // 
-            buttonName_KRA.Location = new Point(468, 395);
-            buttonName_KRA.Name = "buttonName_KRA";
-            buttonName_KRA.Size = new Size(62, 45);
-            buttonName_KRA.TabIndex = 11;
-            buttonName_KRA.Text = "?";
-            buttonName_KRA.UseVisualStyleBackColor = true;
-            buttonName_KRA.Click += buttonName_KRA_Click;
+            buttonHelp_KRA.Location = new Point(468, 395);
+            buttonHelp_KRA.Name = "buttonHelp_KRA";
+            buttonHelp_KRA.Size = new Size(62, 45);
+            buttonHelp_KRA.TabIndex = 11;
+            buttonHelp_KRA.Text = "?";
+            buttonHelp_KRA.UseVisualStyleBackColor = true;
+            buttonHelp_KRA.Click += buttonName_KRA_Click;
             // 
             // groupBox_X_KRA
             // 
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonName_KRA);
+            Controls.Add(buttonHelp_KRA);
             Controls.Add(buttonComplete_KRA);
             Controls.Add(groupBoxOutput_KRA);
             Controls.Add(groupBoxText_KRA);
@@ -190,7 +190,7 @@
         private GroupBox groupBoxOutput_KRA;
         private GroupBox groupBoxResult_KRA;
         private Button buttonComplete_KRA;
-        private Button buttonName_KRA;
+        private Button buttonHelp_KRA;
         private TextBox textBoxAnswer_KRA;
         private GroupBox groupBox_X_KRA;
         private TextBox groupBox_InputX_KRA;
