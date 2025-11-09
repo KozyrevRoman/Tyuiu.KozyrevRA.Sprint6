@@ -168,7 +168,6 @@
             Controls.Add(groupBoxInput_KRA);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            MinimizeBox = false;
             Name = "FormMain_KRA";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 0 | Вариант 2 | Козырев Р.А ";
