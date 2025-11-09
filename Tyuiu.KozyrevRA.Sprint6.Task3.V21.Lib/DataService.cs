@@ -19,14 +19,20 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task3.V21.Lib
                 }
 
             }
-            Array.Sort(Array1, (a, b) => a[0].CompareTo(b[0]));
+            int numRows = matrix.GetLength(0);
+            int[] firstColumn = new int[numRows];
+            for (int i = 0; i < numRows; i++)
+            {
+                firstColumn[i] = matrix[i, 0];
+            }
+            Array.Sort(firstColumn);
             int[,] matrix1 = new int[5, 5]
             {
-                {Array1[0][0], Array1[0][1],  Array1[0][2],   Array1[0][3], Array1[0][4]},
-                {Array1[1][0], Array1[1][1],  Array1[1][2],   Array1[1][3], Array1[1][4]},
-                {Array1[2][0], Array1[2][1],  Array1[2][2],   Array1[2][3], Array1[2][4]},
-                {Array1[3][0], Array1[3][1],  Array1[3][2],   Array1[3][3], Array1[3][4]},
-                {Array1[4][0], Array1[4][1],  Array1[4][2],   Array1[4][3], Array1[4][4]}
+                {firstColumn[0], Array1[0][1],  Array1[0][2],   Array1[0][3], Array1[0][4]},
+                {firstColumn[1], Array1[1][1],  Array1[1][2],   Array1[1][3], Array1[1][4]},
+                {firstColumn[2], Array1[2][1],  Array1[2][2],   Array1[2][3], Array1[2][4]},
+                {firstColumn[3], Array1[3][1],  Array1[3][2],   Array1[3][3], Array1[3][4]},
+                {firstColumn[4], Array1[4][1],  Array1[4][2],   Array1[4][3], Array1[4][4]}
             };
             return matrix1; 
         }

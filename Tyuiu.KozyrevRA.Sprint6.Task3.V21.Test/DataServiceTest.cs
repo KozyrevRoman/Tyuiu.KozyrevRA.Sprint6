@@ -8,7 +8,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task3.V21.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            int[,] matrix = new int[5, 5]
+                    int[,] matrix = new int[5, 5]
             {
                 {26, -15,  7,   1, -4},
                 { 14,  26, 22,  17, 27},
@@ -18,11 +18,11 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task3.V21.Test
             };
             int[,] wait = new int[5, 5]
             {
-                { -18, 16, -2, 16, 27 },
-                { -8, 31, 22, 34, 4 },
-                { 5, 2, -4, 16, 15 },
-                { 14, 26, 22, 17, 27 },
-                { 26, -15, 7, 1, -4 }
+                {-18, -15,  7,   1, -4},
+                { -8,  26, 22,  17, 27},
+                { 5,  31, 22,  34,  4},
+                {14,  16, -2,  16, 27},
+                { 26,   2, -4,  16, 15}
             };
             int[,] res = ds.Calculate(matrix);
             CollectionAssert.AreEqual(res, wait);
