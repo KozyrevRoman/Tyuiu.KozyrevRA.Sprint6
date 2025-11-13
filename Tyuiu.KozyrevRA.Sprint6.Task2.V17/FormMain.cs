@@ -65,5 +65,10 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task2.V17
         {
             buttonDone_KRA.BackColor = Color.Green;
         }
+
+        private void FormMain_KRA_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
