@@ -19,7 +19,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Test
             DataService ds = new DataService();
             string path = @"C:\Users\GIGABYTE\Desktop\DataSprint5\InPutDataFileTask6V4.txt";
             var res = ds.CollectTextFromFile(path);
-            string wait = "SnBCOoyPFhjSRwp\nnnndrMRbvnKtNW";
+            string wait = "SnBC nnndrM RbvnKtNW";
             Assert.AreEqual(wait, res);
         }
     }

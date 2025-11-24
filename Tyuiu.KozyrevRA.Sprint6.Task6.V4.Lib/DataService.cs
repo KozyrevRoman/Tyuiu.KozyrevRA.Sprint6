@@ -7,23 +7,25 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
         {
             int count = 0;
             string l2 = "";
-            string[] str = path.Split(new char[] { ' ','\n'}, StringSplitOptions.RemoveEmptyEntries);
-            string line;
-            int tr = 0;
-
-            foreach (string str2 in str) 
+            using (StreamReader reader = new StreamReader(path))
             {
-                foreach(char str3 in str2)
+                string[] str = reader.ReadToEnd().Split(new char[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
+                string line;
+                int tr = 0;
+                foreach (string str2 in str) 
                 {
-                    if (str3 == Convert.ToChar("n"))
+                    foreach(char str3 in str2)
                     {
-                        tr = 1;
+                        if (str3 == Convert.ToChar("n"))
+                        {
+                            tr = 1;
+                        }    
                     }
-                }
-                if (tr == 1)
-                {
-                    l2=l2+" " + str2;
-                    tr = 0;
+                    if (tr == 1)
+                    {
+                        l2 += str2;
+                        tr = 0;
+                    }
                 }
             }
             return l2;
