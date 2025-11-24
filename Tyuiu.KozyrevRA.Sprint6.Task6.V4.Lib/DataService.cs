@@ -7,9 +7,10 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
         {
             int count = 0;
             string l2 = "";
-            string[] str = path.Split(new char[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
+            string[] str = path.Split(new char[] { ' ','\n'}, StringSplitOptions.RemoveEmptyEntries);
             string line;
             int tr = 0;
+
             foreach (string str2 in str) 
             {
                 foreach(char str3 in str2)
@@ -17,7 +18,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
                     if (str3 == Convert.ToChar("n"))
                     {
                         tr = 1;
-                    }    
+                    }
                 }
                 if (tr == 1)
                 {
