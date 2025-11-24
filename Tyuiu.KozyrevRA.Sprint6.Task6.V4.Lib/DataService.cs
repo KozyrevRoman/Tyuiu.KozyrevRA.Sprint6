@@ -21,7 +21,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
                 }
                 if (tr == 1)
                 {
-                    l2 += str2;
+                    l2=l2+" " + str2;
                     tr = 0;
                 }
             }
