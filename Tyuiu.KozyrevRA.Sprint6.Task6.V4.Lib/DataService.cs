@@ -9,7 +9,7 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
             string l2 = "";
             using (StreamReader reader = new StreamReader(path))
             {
-                string[] str = reader.ReadToEnd().Split(new char[] { ' '}, StringSplitOptions.RemoveEmptyEntries);
+                string[] str = reader.ReadToEnd().Split(new char[] { ' ','\n'}, StringSplitOptions.RemoveEmptyEntries);
                 string line;
                 int tr = 0;
                 foreach (string str2 in str) 
@@ -23,8 +23,16 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task6.V4.Lib
                     }
                     if (tr == 1)
                     {
-                        l2 += str2;
-                        tr = 0;
+                        if (l2 == "") 
+                        {
+                            l2 += str2;
+                            tr = 0;
+                        }
+                        else
+                        {
+                            l2 += (" " + str2);
+                            tr = 0;
+                        }
                     }
                 }
             }
