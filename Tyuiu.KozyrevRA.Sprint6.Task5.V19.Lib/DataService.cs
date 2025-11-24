@@ -16,28 +16,19 @@ namespace Tyuiu.KozyrevRA.Sprint6.Task5.V19.Lib
                 }
             }
             double[] numsArray = new double[len];
+            List<double> list = new List<double>();
             int index = 0;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    try
-                    {
-                        int x1 = Convert.ToInt32(line);
-                        if (x1 == Convert.ToDouble(line))
-                        {
-                            numsArray[index] = x1;
-                        }
-                        index++;
-                    }
-                    catch
-                    {
-                        index++;
-                    }
+                    numsArray[index] = Convert.ToDouble(line);
+                    index++;
+
                 }
             }
-            numsArray = numsArray.Where(val => val !=0).ToArray();
+            numsArray = numsArray.Where(val => val ==Convert.ToInt32(val)).ToArray();
             return numsArray;
         }
     }
