@@ -40,12 +40,12 @@
             saveFileDialog_KRA = new SaveFileDialog();
             dataGridView_OutPut_KRA = new DataGridView();
             panel_TOP_KRA = new Panel();
-            textBox_OutPut_KRA = new TextBox();
             textBox_Input_KRA = new TextBox();
+            textBox_OutPut_KRA = new TextBox();
             panel_Left_KRA = new Panel();
+            splitter_KRA = new Splitter();
             dataGridView_Input_KRA = new DataGridView();
             panelMiddle_KRA = new Panel();
-            splitter_KRA = new Splitter();
             ((System.ComponentModel.ISupportInitialize)dataGridView_OutPut_KRA).BeginInit();
             panel_TOP_KRA.SuspendLayout();
             panel_Left_KRA.SuspendLayout();
@@ -55,11 +55,12 @@
             // 
             // textBoxTask_KRA
             // 
-            textBoxTask_KRA.Location = new Point(12, 10);
+            textBoxTask_KRA.Dock = DockStyle.Top;
+            textBoxTask_KRA.Location = new Point(0, 0);
             textBoxTask_KRA.Multiline = true;
             textBoxTask_KRA.Name = "textBoxTask_KRA";
             textBoxTask_KRA.ReadOnly = true;
-            textBoxTask_KRA.Size = new Size(1878, 96);
+            textBoxTask_KRA.Size = new Size(1902, 96);
             textBoxTask_KRA.TabIndex = 35;
             textBoxTask_KRA.Text = resources.GetString("textBoxTask_KRA.Text");
             textBoxTask_KRA.TextChanged += textBoxTask_KRA_TextChanged;
@@ -76,7 +77,7 @@
             // 
             // buttonComplete_KRA
             // 
-            buttonComplete_KRA.Anchor = AnchorStyles.Top;
+            buttonComplete_KRA.Anchor = AnchorStyles.Left;
             buttonComplete_KRA.BackColor = Color.White;
             buttonComplete_KRA.Cursor = Cursors.Hand;
             buttonComplete_KRA.Enabled = false;
@@ -91,7 +92,7 @@
             // 
             // buttonOpen_KRA
             // 
-            buttonOpen_KRA.Anchor = AnchorStyles.Top;
+            buttonOpen_KRA.Anchor = AnchorStyles.Left;
             buttonOpen_KRA.BackColor = Color.White;
             buttonOpen_KRA.Cursor = Cursors.Hand;
             buttonOpen_KRA.Image = (Image)resources.GetObject("buttonOpen_KRA.Image");
@@ -105,7 +106,7 @@
             // 
             // button_INFO_KRA
             // 
-            button_INFO_KRA.Anchor = AnchorStyles.None;
+            button_INFO_KRA.Anchor = AnchorStyles.Right;
             button_INFO_KRA.Image = Properties.Resources.Снимок_экрана_2025_11_24_194417;
             button_INFO_KRA.Location = new Point(1787, 20);
             button_INFO_KRA.Name = "button_INFO_KRA";
@@ -117,7 +118,7 @@
             // 
             // buttonSave_KRA
             // 
-            buttonSave_KRA.Anchor = AnchorStyles.Top;
+            buttonSave_KRA.Anchor = AnchorStyles.Left;
             buttonSave_KRA.BackColor = Color.White;
             buttonSave_KRA.Cursor = Cursors.Hand;
             buttonSave_KRA.Enabled = false;
@@ -149,32 +150,34 @@
             // 
             // panel_TOP_KRA
             // 
-            panel_TOP_KRA.Controls.Add(textBoxTask_KRA);
-            panel_TOP_KRA.Controls.Add(textBox_OutPut_KRA);
             panel_TOP_KRA.Controls.Add(textBox_Input_KRA);
+            panel_TOP_KRA.Controls.Add(textBox_OutPut_KRA);
+            panel_TOP_KRA.Controls.Add(textBoxTask_KRA);
             panel_TOP_KRA.Dock = DockStyle.Top;
             panel_TOP_KRA.Location = new Point(0, 150);
             panel_TOP_KRA.Name = "panel_TOP_KRA";
             panel_TOP_KRA.Size = new Size(1902, 160);
             panel_TOP_KRA.TabIndex = 48;
             // 
-            // textBox_OutPut_KRA
-            // 
-            textBox_OutPut_KRA.Location = new Point(929, 112);
-            textBox_OutPut_KRA.Name = "textBox_OutPut_KRA";
-            textBox_OutPut_KRA.ReadOnly = true;
-            textBox_OutPut_KRA.Size = new Size(1019, 27);
-            textBox_OutPut_KRA.TabIndex = 46;
-            textBox_OutPut_KRA.Text = "Вывод:";
-            // 
             // textBox_Input_KRA
             // 
+            textBox_Input_KRA.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             textBox_Input_KRA.Location = new Point(14, 112);
             textBox_Input_KRA.Name = "textBox_Input_KRA";
             textBox_Input_KRA.ReadOnly = true;
             textBox_Input_KRA.Size = new Size(876, 27);
             textBox_Input_KRA.TabIndex = 44;
             textBox_Input_KRA.Text = "Ввод:";
+            // 
+            // textBox_OutPut_KRA
+            // 
+            textBox_OutPut_KRA.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox_OutPut_KRA.Location = new Point(926, 112);
+            textBox_OutPut_KRA.Name = "textBox_OutPut_KRA";
+            textBox_OutPut_KRA.ReadOnly = true;
+            textBox_OutPut_KRA.Size = new Size(955, 27);
+            textBox_OutPut_KRA.TabIndex = 46;
+            textBox_OutPut_KRA.Text = "Вывод:";
             // 
             // panel_Left_KRA
             // 
@@ -186,6 +189,14 @@
             panel_Left_KRA.Name = "panel_Left_KRA";
             panel_Left_KRA.Size = new Size(1902, 723);
             panel_Left_KRA.TabIndex = 49;
+            // 
+            // splitter_KRA
+            // 
+            splitter_KRA.Location = new Point(876, 0);
+            splitter_KRA.Name = "splitter_KRA";
+            splitter_KRA.Size = new Size(4, 723);
+            splitter_KRA.TabIndex = 46;
+            splitter_KRA.TabStop = false;
             // 
             // dataGridView_Input_KRA
             // 
@@ -217,14 +228,6 @@
             panelMiddle_KRA.Size = new Size(1902, 150);
             panelMiddle_KRA.TabIndex = 51;
             panelMiddle_KRA.Paint += panelMiddle_KRA_Paint;
-            // 
-            // splitter_KRA
-            // 
-            splitter_KRA.Location = new Point(876, 0);
-            splitter_KRA.Name = "splitter_KRA";
-            splitter_KRA.Size = new Size(4, 723);
-            splitter_KRA.TabIndex = 46;
-            splitter_KRA.TabStop = false;
             // 
             // FormMain
             // 
